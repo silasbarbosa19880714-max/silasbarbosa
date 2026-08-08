@@ -1,0 +1,56 @@
+/*======================================================
+                    NEURO CLÍNICA
+                 DESIGN SYSTEM
+=======================================================*/
+
+/*==========================
+        CORES
+==========================*/
+
+:root{
+
+    /* Cor Principal */
+
+    --cor-primaria:#17B4E6;
+
+    /* Azul Escuro */
+
+    --cor-secundaria:#0B6FA4;
+
+    /* Cor de Destaque */
+
+    --cor-destaque:#F7A928;
+
+    /* Fundo */
+
+    --cor-branco:#FFFFFF;
+
+    --cor-fundo:#F8FBFD;
+
+    /* Texto */
+
+    --texto:#354052;
+
+    --texto-claro:#6B7280;
+
+    /* Bordas */
+
+    --borda:#E8EEF2;
+
+    /* Sombras */
+
+    --sombra-pequena:0 5px 15px rgba(0,0,0,.08);
+
+    --sombra-media:0 12px 30px rgba(0,0,0,.12);
+
+    --sombra-grande:0 20px 50px rgba(0,0,0,.18);
+
+    /* Cantos */
+
+    --radius:18px;
+
+    --radius-card:25px;
+
+    --radius-botao:50px;
+
+}

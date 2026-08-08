@@ -1,0 +1,291 @@
+/*=========================================================
+                    MENU PREMIUM
+==========================================================*/
+
+/* Remove marcadores */
+
+.menu ul{
+
+    list-style:none;
+
+}
+
+/* Remove sublinhado */
+
+.menu a{
+
+    text-decoration:none;
+
+}
+
+
+/*=========================================================
+                    MENU PRINCIPAL
+==========================================================*/
+
+.menu{
+
+    width:100%;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    backdrop-filter:blur(18px);
+
+    background:rgba(255,255,255,.85);
+
+    box-shadow:
+
+        0 8px 30px rgba(0,0,0,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.6);
+
+}
+
+
+/*=========================================================
+                    CONTAINER
+==========================================================*/
+
+.menu-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+    height:90px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+/*=========================================================
+                    LOGO
+==========================================================*/
+
+.logo-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+
+.logo-menu img{
+
+    width:65px;
+
+    height:65px;
+
+    object-fit:contain;
+
+}
+
+
+/*=========================================================
+                LINKS
+==========================================================*/
+
+.menu-links{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+}
+
+
+.menu-links li{
+
+    position:relative;
+
+}
+
+
+.menu-links a{
+
+    color:#24476B;
+
+    font-weight:700;
+
+    font-size:17px;
+
+    transition:.35s;
+
+}
+
+
+/*=========================================================
+            LINHA ANIMADA
+==========================================================*/
+
+.menu-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-10px;
+
+    width:0;
+
+    height:3px;
+
+    background:#17B4E6;
+
+    transition:.35s;
+
+    border-radius:50px;
+
+}
+
+
+.menu-links a:hover{
+
+    color:#17B4E6;
+
+}
+
+
+.menu-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+/*=========================================================
+            BOTÃO
+==========================================================*/
+
+.btn-menu{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #17B4E6,
+
+        #0D8AC4
+
+    );
+
+    color:#FFF;
+
+    padding:16px 28px;
+
+    border-radius:50px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 10px 25px rgba(23,180,230,.35);
+
+}
+
+
+.btn-menu:hover{
+
+    transform:
+
+        translateY(-4px);
+
+    box-shadow:
+
+        0 18px 35px rgba(23,180,230,.45);
+
+}
+
+
+/*=========================================================
+            BOTÃO MOBILE
+==========================================================*/
+
+.menu-mobile{
+
+    display:none;
+
+    border:none;
+
+    background:none;
+
+    font-size:34px;
+
+    color:#214166;
+
+    cursor:pointer;
+
+}
+
+
+/*=========================================================
+            RESPONSIVO
+==========================================================*/
+
+@media(max-width:1000px){
+
+.menu-links{
+
+    position:absolute;
+
+    top:90px;
+
+    left:0;
+
+    width:100%;
+
+    background:#FFF;
+
+    flex-direction:column;
+
+    padding:30px;
+
+    gap:30px;
+
+    display:none;
+
+    box-shadow:
+
+        0 20px 35px rgba(0,0,0,.10);
+
+}
+
+.menu-links.ativo{
+
+    display:flex;
+
+}
+
+.btn-menu{
+
+    display:none;
+
+}
+
+.menu-mobile{
+
+    display:block;
+
+}
+
+}
