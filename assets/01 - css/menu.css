@@ -239,53 +239,73 @@
 
 
 /*=========================================================
-            RESPONSIVO
+                MENU PARA CELULAR
 ==========================================================*/
 
 @media(max-width:1000px){
 
-.menu-links{
+    .menu-links{
 
-    position:absolute;
+        position:absolute;
 
-    top:90px;
+        top:90px;
 
-    left:0;
+        left:0;
 
-    width:100%;
+        width:100%;
 
-    background:#FFF;
+        background:#FFFFFF;
 
-    flex-direction:column;
+        flex-direction:column;
 
-    padding:30px;
+        padding:30px 0;
 
-    gap:30px;
+        gap:25px;
 
-    display:none;
+        display:none;
 
-    box-shadow:
+        box-shadow:
+            0 20px 35px rgba(0,0,0,.10);
 
-        0 20px 35px rgba(0,0,0,.10);
+    }
 
-}
 
-.menu-links.ativo{
+    /* Quando o JavaScript adiciona "ativo",
+       o menu aparece */
 
-    display:flex;
+    .menu-links.ativo{
 
-}
+        display:flex;
 
-.btn-menu{
+    }
 
-    display:none;
 
-}
+    /* Esconde o botão Agende sua Consulta
+       no menu mobile */
 
-.menu-mobile{
+    .btn-menu{
 
-    display:block;
+        display:none;
 
-}
+    }
+
+
+    /* Mostra o botão dos três traços */
+
+    .menu-mobile{
+
+        display:block;
+
+        border:none;
+
+        background:transparent;
+
+        font-size:32px;
+
+        color:#214166;
+
+        cursor:pointer;
+
+    }
 
 }
