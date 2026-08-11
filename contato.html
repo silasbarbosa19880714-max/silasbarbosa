@@ -25,6 +25,10 @@
     <link rel="stylesheet"
         href="assets/01 - css/menu.css">
 
+    <!--CSS Carrosel-->
+    <link rel="stylesheet"
+        href="assets/01 - css/carrossel.css">
+
     <!--CSS GRADE DE ESPECIALIDADES-->
     <link rel="stylesheet"
         href="assets/01 - css/especialidades.css">
@@ -54,7 +58,7 @@
     <link rel="stylesheet" 
         href="assets/01 - css/footer.css">
 
-    <!--CSS CONTATO-->
+        <!--CSS CONTATO-->
     <link rel="stylesheet"
         href="assets/01 - css/contato-premium.css">
 
@@ -67,7 +71,6 @@
 
     <link rel="stylesheet"
         href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
-
 
 </head>
 
@@ -219,7 +222,7 @@
             </li>
 
             <li>
-                <a href="a_clinica.html">
+                <a href="#especialidades">
                     A Clínica
                 </a>
             </li>
@@ -231,7 +234,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a href="contato.html">
                     Contato
                 </a>
             </li>
@@ -538,8 +541,6 @@
 
     </div>
 
-
-
     <!--=========================
             PAINEL
     ==========================-->
@@ -780,7 +781,8 @@
 
 </div>
 
-   <br>
+   
+<br>
 
 <!--=========================================================
                     ESPECIALIDADES
@@ -792,7 +794,6 @@
     <!--=====================================================
                         CABEÇALHO DA SEÇÃO
     ======================================================-->
-
     <div class="container">
 
         <div class="titulo-especialidades">
@@ -809,9 +810,6 @@
         </div>
 
     </div>
-
-
-
     <!--=====================================================
                     GRID DAS ESPECIALIDADES
     ======================================================-->
@@ -1361,29 +1359,30 @@
                 JAVASCRIPT
     =========================================== -->
 
-    
+    <script src="assets/02 - js/vendor/js/menu.js"></script>
     <script src="assets/02 - js/vendor/js/especialidades.js"></script>
-     <!--<script src="assets/02 - js/footer.js"></script>-->
-     <script>"assets/02 - js/vendor/js/menu.js"</script>
+    <!--<script src="assets/02 - js/footer.js"></script>-->
+    <script>"assets/02 - js/vendor/js/menu.js"</script>
 
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
     
     <script src="assets/02 - js/vendor/js/mapa-clinica.js"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script>
 
-AOS.init({
-
-    duration:1000,
-
-    once:true,
-
-    easing:"ease-out-cubic"
-
-});
-
-</script>
+        AOS.init({
+        
+            duration:1000,
+        
+            once:true,
+        
+            easing:"ease-out-cubic"
+        
+        });
+        
+        </script>
 
 </body>
 
