@@ -48,15 +48,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Nunito:wght@300;400;500;600;700&display=swap" 
         rel="stylesheet">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
     <!-- Ícones Profissionais-->
 
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <!--História dos profissionais-->
+
+    <link rel="stylesheet"
+        href="assets/01 - css/historia-andre.css"
+
     <!--CSS Rodapé-->
 
     <link rel="stylesheet" 
         href="assets/01 - css/footer.css">
+
+        <style>
+            /* Container principal do perfil */
+            .perfil-container {
+                display: flex;
+                align-items: center; /* Alinha o texto e a foto no centro vertical */
+                gap: 20px;           /* Espaço entre a foto e o texto */
+                font-family: Arial, sans-serif;
+            }
+    
+            /* Estilo da foto de perfil (redonda) */
+            .foto-perfil {
+                width: 180px;        /* Largura da foto */
+                height: 180px;       /* Altura da foto */
+                border-radius: 50%;  /* Deixa a imagem redonda */
+                object-fit: cover;   /* Evita que a foto fique distorcida */
+            }
+    
+            /* Estilo dos textos do perfil */
+            .info-perfil h2 {
+                margin: 0 0 5px 0;   /* Remove margens exageradas */
+                font-size: 18px;
+            }
+    
+            .info-perfil p {
+                margin: 0;
+                color: #555;
+                font-size: 14px;
+            }
+        </style>
 
 
 </head>
@@ -168,93 +207,6 @@
     </div>
 
 </header>
-<!--=========================================================
-                PAINEL DE DESTAQUES
-==========================================================-->
-
-<section class="painel-info">
-
-    <div class="painel-container">
-
-        <!-- Card 1 -->
-
-        <div class="info-card">
-
-            <div class="icone-card">
-
-                <i class="fa-solid fa-brain"></i>
-
-            </div>
-
-            <h3>
-
-                +12
-
-            </h3>
-
-            <p>
-
-                Especialidades
-
-            </p>
-
-        </div>
-
-        <!-- Card 2 -->
-
-        <div class="info-card">
-
-            <div class="icone-card">
-
-                <i class="fa-solid fa-user-doctor"></i>
-
-            </div>
-
-            <h3>
-
-                Equipe
-
-            </h3>
-
-            <p>
-
-                Multidisciplinar
-
-            </p>
-
-        </div>
-
-        <!-- Card 3 -->
-
-        <div class="info-card">
-
-            <div class="icone-card">
-
-                <i class="fa-solid fa-heart-pulse"></i>
-
-
-            </div>
-
-            <h3>
-
-                Atendimento
-
-            </h3>
-
-            <p>
-
-                Humanizado
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
 
     <!-- ==========================================
                 MENU DE NAVEGAÇÃO
@@ -286,17 +238,17 @@
         <ul class="menu-links">
 
             <li>
-                <a href="#">Início</a>
+                <a href="index.html">Início</a>
             </li>
 
             <li>
-                <a href="#especialidades">
+                <a href="index.html">
                     Especialidades
                 </a>
             </li>
 
             <li>
-                <a href="a_clinica.html">
+                <a href="#especialidades">
                     A Clínica
                 </a>
             </li>
@@ -342,115 +294,253 @@
 
 </nav>
 
+<!-- =========================================================
+     HISTÓRIA PROFISSIONAL — ANDRÉ LUIZ BARBOSA DE ALMEIDA
+     
+     SEÇÃO INDEPENDENTE
+     Não altera:
+     - Header
+     - Menu
+     - Footer
+========================================================= -->
+
+<section class="historia-andre" id="historia-andre">
+
+    <!-- =====================================================
+         AMBIENTE CINEMATOGRÁFICO
+    ====================================================== -->
+
+    <div class="ha-world" aria-hidden="true">
+        <div class="ha-light ha-light-01"></div>
+        <div class="ha-light ha-light-02"></div>
+        <div class="ha-light ha-light-03"></div>
+        <div class="ha-glow"></div>
+    </div>
 
 
-    <!-- ===================================================
-                CARROSSEL PRINCIPAL
-==================================================== -->
-<section class="carousel">
+    <div class="container ha-container">
 
-    <div class="slides">
+        <!-- =================================================
+             ABERTURA
+        ================================================== -->
 
-        <!-- Slide 1 -->
+        <header class="ha-heading">
 
-        <div class="slide ativo">
+            <div class="ha-kicker">
+                <span></span>
+                TRAJETÓRIA PROFISSIONAL
+                <span></span>
+            </div>
 
-            <img src="assets/03 - img/02 - banners/banner01.jpeg"
-                 alt="Neuro Clínica Desenvolver">
+            <h2>
+                Especialidade
+                <strong>do musicoterapeuta</strong>
+            </h2>
 
-                 <div class="texto">
+            <p>
+                Conhecimento, música e desenvolvimento humano
+                construídos ao longo de uma trajetória profissional.
+            </p>
 
-                    <h2>
-                        Bem-vindo à
-                        <br>
-                        <span>Neuro Clínica Desenvolver</span>
-                    </h2>
-                
-                    <p>
-                        Atendimento especializado em
-                        <strong>neurodesenvolvimento</strong>,
-                        oferecendo cuidado humanizado para crianças,
-                        adolescentes e adultos.
-                
-                    </p>
-                
-                    <a href="https://wa.me/5524992987844" class="btn-banner">
-                
-                        Agende sua Consulta
-                
-                    </a>
-                
+        </header>
+
+
+        <!-- =================================================
+             CARD PRINCIPAL
+        ================================================== -->
+
+        <article class="ha-profile-card">
+
+            <!-- LINHA SUPERIOR -->
+
+            <div class="ha-card-top">
+
+                <div class="ha-section-number">
+                    <small>PERFIL</small>
+                    <strong>01</strong>
                 </div>
 
-                <br>
-                
+                <div class="ha-status">
+                    <span class="ha-status-dot"></span>
+                    PERFIL PROFISSIONAL
+                </div>
 
-        </div>
+            </div>
 
 
-        <!-- Slide 2 -->
+            <!-- =================================================
+                 CONTEÚDO
+            ================================================== -->
 
-        <div class="slide">
+            <div class="ha-profile-content">
 
-            <img src="assets/03 - img/02 - banners/banner02.jpeg"
-                 alt="Equipe">
 
-            <div class="texto">
+                <!-- FOTO -->
 
-                <h2>Equipe Multidisciplinar</h2>
+                <div class="ha-photo-area">
+
+                    <div class="ha-photo-frame">
+
+                        <div class="ha-photo-glow"></div>
+
+                        <img
+                            src="assets/03 - img/04 - geral/andre04.png" 
+                            alt="André Luiz Barbosa de Almeida"
+                            class="foto-perfil"
+                        >
+
+                        <a
+                            href="https://www.instagram.com/andrel.b.dealmeida/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="ha-instagram"
+                            aria-label="Instagram de André Luiz Barbosa de Almeida"
+                        >
+                            <span>Instagram</span>
+                            ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMAÇÕES -->
+
+                <div class="ha-profile-text">
+
+                    <span class="ha-eyebrow">
+                        MUSICOTERAPEUTA
+                    </span>
+
+                    <h1>
+                        André Luiz
+                        <span>Barbosa de Almeida</span>
+                    </h1>
+
+                    <div class="ha-divider"></div>
+
+                    <h3>
+                        Música, educação e desenvolvimento humano
+                    </h3>
+
+                    <p class="ha-lead">
+                        O musicoterapeuta reúne a música, a educação
+                        e diferentes áreas do desenvolvimento humano,
+                        construindo uma atuação profissional voltada
+                        para pessoas, famílias e possibilidades de
+                        desenvolvimento.
+                    </p>
+
+                    <p>
+                        Sua trajetória é apresentada não apenas como
+                        uma relação de formações, mas como uma construção
+                        contínua de conhecimento, experiência e dedicação
+                        ao desenvolvimento humano.
+                    </p>
+
+
+                    <!-- REGISTRO -->
+
+                    <div class="ha-registration">
+
+                        <div class="ha-registration-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <small>
+                                REGISTRO PROFISSIONAL
+                            </small>
+
+                            <strong>
+                                AMT-RJ 676/1
+                            </strong>
+
+                            <span>
+                                Associação de Musicoterapia
+                                do Estado do Rio de Janeiro
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =================================================
+                 FRASE DE IMPACTO
+            ================================================== -->
+
+            <div class="ha-manifesto">
+
+                <div class="ha-manifesto-line"></div>
 
                 <p>
-                    Profissionais preparados para cuidar
-                    do desenvolvimento.
+                    “Uma trajetória construída através da música,
+                    do conhecimento e do compromisso com o
+                    desenvolvimento humano.”
                 </p>
 
-                <a href="https://wa.me/5524992987844" class="btn-banner">
-                
+                <span>
+                    ANDRÉ LUIZ BARBOSA DE ALMEIDA
+                </span>
+
+            </div>
+
+            <!-- Botões -->
+
+            <div class="botoes-topo">
+
+                <a href="https://wa.me/5524992987844"
+                    class="btn-consulta"
+                    target="_blank">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
                     Agende sua Consulta
-            
+
+                </a>
+
+                <a href="indexLogin.html"
+                    class="btn-especialidades">
+
+                    Sobre o Paciente
+
                 </a>
 
             </div>
 
-        </div>
+            <br>
+
+        </article>
 
 
-        <!-- Slide 3 -->
+        <!-- =================================================
+             INDICADOR DE CONTINUIDADE
+        ================================================== -->
 
-        <div class="slide">
+        <div class="ha-next">
 
-            <img src="assets/03 - img/02 - banners/banner03.jpeg"
-                 alt="Consultório">
+            <span>
+                CONTINUE EXPLORANDO
+            </span>
 
-            <div class="texto">
+            <div class="ha-next-line"></div>
 
-                <h2>Um ambiente acolhedor</h2>
-
-                <p>
-                    Conforto, carinho e segurança
-                    para toda a família.
-                </p>
-
-                <a href="https://wa.me/5524992987844" class="btn-banner">
-                
-                    Agende sua Consulta
-            
-                </a>
-
-            </div>
+            <span class="ha-arrow">
+                ↓
+            </span>
 
         </div>
 
     </div>
 
-
-    <!-- Botões -->
-
-    <button class="anterior">&#10094;</button>
-
-    <button class="proximo">&#10095;</button>
-
 </section>
+
+<br>
 
 <!--=========================================================
                     ESPECIALIDADES
@@ -462,39 +552,22 @@
     <!--=====================================================
                         CABEÇALHO DA SEÇÃO
     ======================================================-->
-
     <div class="container">
 
         <div class="titulo-especialidades">
 
-            <span class="subtitulo">
-
-                NOSSOS SERVIÇOS
-
-            </span>
-
             <h2>
-
-                Conheça nossas
-                <span>Especialidades</span>
-
+                Especialidades
+                <span>da clínica</span>
             </h2>
-
             <p>
-
-                Tratamento completo e especializado para crianças,
-                adolescentes e adultos com Transtorno do Espectro
-                Autista (TEA) e demais síndromes, oferecendo um
-                atendimento humanizado, acolhedor e individualizado.
-
+                <strong>Neuro Clínica Desenvolver</strong>
+                "Mais do que cuidar de diagnósticos, cuidamos de histórias, sonhos e possibilidades." 💙
             </p>
 
         </div>
 
     </div>
-
-
-
     <!--=====================================================
                     GRID DAS ESPECIALIDADES
     ======================================================-->
@@ -708,7 +781,7 @@
 
                 </p>
 
-                <a href="musicoterapia.html">
+                <a href="#">
 
                     Saiba mais
 
@@ -1045,10 +1118,9 @@
     =========================================== -->
 
     <script src="assets/02 - js/vendor/js/menu.js"></script>
-    <script src="assets/02 - js/vendor/js/carrossel.js"></script>
     <script src="assets/02 - js/vendor/js/especialidades.js"></script>
-    <!--<script src="assets/02 - js/footer.js"></script>-->
     <script>"assets/02 - js/vendor/js/menu.js"</script>
+    <script>"assets/02 - js/vendor/js/historia-andre"</script>
 
 </body>
 
