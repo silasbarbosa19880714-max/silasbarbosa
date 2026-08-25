@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Acesso seguro à área exclusiva da Neuro Clínica Desenvolver."
+    >
+
+    <meta
+        name="theme-color"
+        content="#0b7285"
+    >
+
+    <title>Login | Neuro Clínica Desenvolver</title>
+
+    <!-- =====================================================
+         FOLHA DE ESTILO
+         Vamos criar o CSS na próxima etapa.
+    ====================================================== -->
+    <link
+        rel="stylesheet"
+        href="assets/01 - css/login.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- =====================================================
+         FUNDO DA PÁGINA
+    ====================================================== -->
+
+    <div class="login-page">
+
+        <!-- Elementos decorativos do fundo -->
+        <div class="background-decoration decoration-one"></div>
+        <div class="background-decoration decoration-two"></div>
+        <div class="background-decoration decoration-three"></div>
+
+
+        <!-- =================================================
+             ÁREA PRINCIPAL
+        ================================================== -->
+
+        <main class="login-wrapper">
+
+
+            <!-- =================================================
+                 PAINEL INFORMATIVO
+            ================================================== -->
+
+            <section class="login-introduction">
+
+                <div class="introduction-content">
+
+                    <span class="introduction-tag">
+                        ÁREA EXCLUSIVA
+                    </span>
+
+                    <h1>
+                        Neuro Clínica
+                        <strong>Desenvolver</strong>
+                    </h1>
+
+                    <p class="introduction-text">
+                        Um espaço seguro para acompanhar informações,
+                        documentos e relatórios relacionados ao
+                        desenvolvimento de cada paciente.
+                    </p>
+
+
+                    <!-- Destaques -->
+
+                    <div class="introduction-features">
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                <span>✓</span>
+                            </div>
+
+                            <div>
+                                <strong>Acesso seguro</strong>
+
+                                <p>
+                                    Seus dados protegidos
+                                    com segurança.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                <span>✓</span>
+                            </div>
+
+                            <div>
+                                <strong>Acompanhamento</strong>
+
+                                <p>
+                                    Informações organizadas
+                                    por paciente.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="feature-item">
+
+                            <div class="feature-icon">
+                                <span>✓</span>
+                            </div>
+
+                            <div>
+                                <strong>Equipe especializada</strong>
+
+                                <p>
+                                    Profissionais e responsáveis
+                                    em um único ambiente.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Frase institucional -->
+
+                <div class="introduction-footer">
+
+                    <span>
+                        Cuidado • Desenvolvimento • Humanização
+                    </span>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 CARTÃO DE LOGIN
+            ================================================== -->
+
+            <section class="login-card">
+
+
+                <!-- =================================================
+                     CABEÇALHO
+                ================================================== -->
+
+                <div class="login-header">
+
+
+                    <!-- Logo -->
+
+                    <div class="login-logo">
+
+                        <img
+                            src="assets/03 - img/02 - banners/banner.png"
+                            alt="Neuro Clínica Desenvolver"
+                        >
+
+                    </div>
+
+
+                    <div class="login-title">
+
+                        <span>
+                            BEM-VINDO
+                        </span>
+
+                        <h2>
+                            Acesse sua conta
+                        </h2>
+
+                        <p>
+                            Entre para continuar.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     FORMULÁRIO
+                ================================================== -->
+
+                <form
+                    id="loginForm"
+                    class="login-form"
+                    action="login.php"
+                    method="POST"
+                    autocomplete="on"
+                >
+
+
+                    <!-- =============================================
+                         CAMPO E-MAIL
+                    ============================================== -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span
+                                class="input-icon"
+                                aria-hidden="true"
+                            >
+                                ✉
+                            </span>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Digite seu e-mail"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         CAMPO SENHA
+                    ============================================== -->
+
+                    <div class="form-group">
+
+                        <div class="password-label-row">
+
+                            <label for="senha">
+                                Senha
+                            </label>
+
+                            <button
+                                type="button"
+                                class="forgot-password"
+                                id="openRecovery"
+                            >
+                                Esqueceu a senha?
+                            </button>
+
+                        </div>
+
+
+                        <div class="input-wrapper">
+
+                            <span
+                                class="input-icon"
+                                aria-hidden="true"
+                            >
+                                ●
+                            </span>
+
+                            <input
+                                type="password"
+                                id="senha"
+                                name="senha"
+                                placeholder="Digite sua senha"
+                                autocomplete="current-password"
+                                required
+                            >
+
+
+                            <!-- Botão mostrar senha -->
+
+                            <button
+                                type="button"
+                                class="toggle-password"
+                                id="togglePassword"
+                                aria-label="Mostrar senha"
+                                title="Mostrar senha"
+                            >
+                                ◉
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         LEMBRAR ACESSO
+                    ============================================== -->
+
+                    <div class="remember-area">
+
+                        <label class="remember-label">
+
+                            <input
+                                type="checkbox"
+                                id="lembrar"
+                                name="lembrar"
+                            >
+
+                            <span class="custom-checkbox"></span>
+
+                            <span>
+                                Lembrar meu acesso
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- =============================================
+                         MENSAGEM DE ERRO
+                         Será utilizada posteriormente pelo PHP/JS.
+                    ============================================== -->
+
+                    <div
+                        id="loginMessage"
+                        class="login-message"
+                        role="alert"
+                        aria-live="polite"
+                    ></div>
+
+
+
+                    <!-- =============================================
+                         BOTÃO ENTRAR
+                    ============================================== -->
+
+                    <button
+                        type="submit"
+                        class="login-button"
+                        id="loginButton"
+                    >
+
+                        <span class="button-text">
+                            Entrar
+                        </span>
+
+                        <span
+                            class="button-loading"
+                            aria-hidden="true"
+                        >
+                            Entrando...
+                        </span>
+
+                        <span
+                            class="button-arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- =================================================
+                     CRIAR CONTA
+                ================================================== -->
+
+                <div class="create-account">
+
+                    <span>
+                        Ainda não possui acesso?
+                    </span>
+
+                    <a
+                        href="../cadastro/index.html"
+                        class="create-account-link"
+                    >
+                        Criar uma conta
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RODAPÉ DO LOGIN
+                ================================================== -->
+
+                <div class="login-security">
+
+                    <span
+                        class="security-icon"
+                        aria-hidden="true"
+                    >
+                        🔒
+                    </span>
+
+                    <span>
+                        Ambiente protegido
+                    </span>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- =====================================================
+             RODAPÉ DA PÁGINA
+        ====================================================== -->
+
+        <footer class="page-footer">
+
+            <p>
+                © <span id="currentYear"></span>
+                Neuro Clínica Desenvolver.
+                Todos os direitos reservados.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         MODAL — RECUPERAÇÃO DE ACESSO
+    ========================================================== -->
+
+    <div
+        class="modal-overlay"
+        id="recoveryModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="recovery-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="recoveryTitle"
+        >
+
+
+            <!-- Fechar -->
+
+            <button
+                type="button"
+                class="modal-close"
+                id="closeRecovery"
+                aria-label="Fechar"
+            >
+                ×
+            </button>
+
+
+
+            <!-- Cabeçalho -->
+
+            <div class="modal-header">
+
+                <div class="modal-icon">
+                    ?
+                </div>
+
+                <span>
+                    RECUPERAÇÃO DE ACESSO
+                </span>
+
+                <h2 id="recoveryTitle">
+                    Esqueceu sua senha?
+                </h2>
+
+                <p>
+                    Informe seu e-mail para iniciar
+                    o processo de recuperação.
+                </p>
+
+            </div>
+
+
+
+            <!-- Formulário de recuperação -->
+
+            <form
+                id="recoveryForm"
+                class="recovery-form"
+                action="recuperar_senha.php"
+                method="POST"
+                autocomplete="on"
+            >
+
+                <div class="form-group">
+
+                    <label for="emailRecuperar">
+                        E-mail
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span
+                            class="input-icon"
+                            aria-hidden="true"
+                        >
+                            ✉
+                        </span>
+
+                        <input
+                            type="email"
+                            id="emailRecuperar"
+                            name="emailRecuperar"
+                            placeholder="Digite seu e-mail"
+                            autocomplete="email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="recovery-button"
+                >
+                    Continuar
+                </button>
+
+
+                <button
+                    type="button"
+                    class="cancel-button"
+                    id="cancelRecovery"
+                >
+                    Voltar para o login
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         
+         IMPORTANTE:
+         Ainda não vamos colocar o JavaScript aqui.
+         Na próxima etapa criaremos um arquivo separado:
+         
+         ../assets/js/login.js
+         
+    ========================================================== -->
+
+    <script src="assets/02 - js/vendor/login.js"></script>
+
+</body>
+
+</html>
